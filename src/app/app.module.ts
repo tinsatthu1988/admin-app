@@ -13,7 +13,8 @@ import { AccountComponent } from './account/account.component';
 import { JobComponent } from './job/job.component';
 import { ReviewComponent } from './review/review.component';
 import { HttpClientModule } from '@angular/common/http';
-import { CategoryService } from './_services/category.service'
+import { CategoryService } from './_services/category.service';
+import { DataTablesModule } from "angular-datatables";
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { CategoryService } from './_services/category.service'
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    DataTablesModule
   ],
   providers: [CategoryService],
   bootstrap: [AppComponent]

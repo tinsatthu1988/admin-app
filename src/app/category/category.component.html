@@ -3,7 +3,7 @@
 <p>
     <a asp-action="Create" class="btn btn-success text-white"> <i class="fa fa-plus" aria-hidden="true"></i> Create New</a>
 </p>
-<table  class="table">
+<table datatable [dtOptions]="dtOptions" [dtTrigger]="dtTrigger" class="row-border hover">
     <thead>
         <tr>
             <th>
